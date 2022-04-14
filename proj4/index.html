@@ -54,7 +54,24 @@
 	<img src="images/task3_plane.png">
 
 	<p><big> Part 4: </big></p>
-
+	<p>4.1: selfCollide.json cloth falling with default parameters</p>
+	<p>Early self collisions</p>
+	<img src="images/task4_1.png">
+	<p>Late self collisions</p>
+	<img src="images/task4_2.png">
+	<p>Cloth basically at rest</p>
+	<img src="images/task4_3.png">
+	<p>4.2: selfCollide.json cloth falling with various parameters</p>
+	<p>Generally, ks affects the self-collision of the cloth in that the higher the ks, the higher the rigidity of the springs, so the cloth is more resistant to change. That is why, in the higher ks scene, the cloth only has a couple of large folds whereas the lower ks scene has many folds. Again, one way to think about ks is that if ks was infinitely high, the cloth would behave like a slab, and a slab falling on itself would have no folds, so generally, the higher the ks the less folds would be in the resting cloth and the lower the ks the more folds would be in the resting cloth. However, I will say that number of folds and ks is not exactly a direct correlation, due to how the cloth falls this relationship might be slightly different but generally, comparing very high ks and very low ks this will be true. </p>
+	<p>High KS:</p>
+	<img src="images/task4_highks.png">
+	<p>Low KS:</p>
+	<img src="images/task4_lowks.png">
+	<p>Generally, density acts oppositely to ks. The higher the density the more folds the resting cloth will have and the lower the density the less folds the resting cloth will have. We can see this in the images, especially in the low density image, which has a very straight piece of cloth at the end.</p>
+	<p>High density:</p>
+	<img src="images/task4_highdens.png">
+	<p>Low density:</p>
+	<img src="images/task4_lowdens.png">
 
 	</body>
 </html>
