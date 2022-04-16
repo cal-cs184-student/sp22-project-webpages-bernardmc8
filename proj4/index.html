@@ -73,5 +73,25 @@
 	<p>Low density:</p>
 	<img src="images/task4_lowdens.png">
 
+	<p><big> Part 5: </big></p>
+	<p>5.1: A shader program is a rather simple isolated input/output program that defines some sort of transformation on vertices or fragments in order to change their color or position vectors based on some purpose the shader is trying to fulfill. It's main use is that because it can run parallel on the GPU, it can execute sections of the graphics pipeline much faster than if we did everything on the CPU like we did in projects 3-1 and 3-2. Vertex shaders deal primarily with geometric properties, and they can for example change the position and normal vectors of the vertices. Fragment shaders deal more with color and light. Vertex and fragment shaders work together as vertex shaders will write the final position of the vector after some transformation as well as some variables that will be used by the fragment shader and then the fragment shader will process fragments after rasterization by using the positional features of the fragments, which were calculated and set by the vertex shader, to then compute the color of the pixel based on the geometry and how the light would shine on it.  </p>
+	<p>5.2: The Blinn-Phong Reflection Model aims to simulate realistically looking graphics by combining three aspects of lighting that can make a pixel look realistic. The first is just the ambient lighting, which is general lighting across the whole scene. The second is diffuse lighting, which we implemented in the Task 1 of this part, and it is for scattered light that falls on the object based on what parts of the object are facing the light. Diffuse lighting is what indirectly defines the shadows on an object because it lights up the object based on where the light would hit it, like in real life. The third and final part is specular lighting, which renders the "glare" that can often be seen on reflective or semi-reflective surfaces. Parts of an object that are facing the light often reflect the light source directly, and so the object will appear glossy or shiny in those areas, which specular lighting aims to reproduce. Adding these three elements together gives you the Blinn-Phong shading model, which is a pretty good estimate of how things look in real life. In fact, it's the default shading model for OpenGL and Direct3D (source: wikipedia Blinn-Phong reflection model page) </p>
+	<p>Sphere.json with only ambient lighting component</p>
+	<img src="images/task5_1.png">
+	<p>Sphere.json with only diffuse lighting component</p>
+	<img src="images/task5_2.png">
+	<p>Sphere.json with only specular lighting component</p>
+	<img src="images/task5_3.png">
+	<p>Sphere.json with all components (entire Blinn-Phong model)</p>
+	<img src="images/task5_4.png">
+	<p>5.3: Texture Mapping of Oski (textures/oski.png) onto Sphere.json </p>
+	<img src="images/task5_5.png">
+
+	<p>5.4: BUMP MAPPING: SHOW BOTH CLOTH AND SPHERE</p>
+
+	<p>5.5: Mirror shader on Sphere.json</p>
+	<img src="images/task5_mirror.png">
+	<img src="images/task5_mirror2.png">
+
 	</body>
 </html>
